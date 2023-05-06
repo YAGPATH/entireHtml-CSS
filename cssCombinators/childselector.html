@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Children selector</title>
+        <style>
+        div > p {
+          color: brown;
+        }
+
+        span > p {
+            color: aqua;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div>
+            <p> p1 </p>
+            <p> p2 </p>
+            <span>
+                <p> p3 </p>
+                <p> p4 </p>
+            </span>
+        </div>
+        <p> p5 </p>
+    </body>
+</html>
+
+
+
+<!-- This combinator is used using " > "-->
+<!-- here it will monly select those under 1 tag. for above line we selected child
+        selector under div tag. so p1 and p2 are children of div. and  so style will apply
+        to them.
+    styling done from line 4 to 11.
+
+    And we have used child selector on span tag so that style will apply to it only.
+
+    -->

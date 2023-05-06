@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Sibling selector</title>
+        <style>
+        h1 ~ h2 {
+          color: brown;
+        }
+    </style>
+    </head>
+    <body>
+            <p> p6 </p>
+            <h1> Heading 1 </h1>
+            <p> p1 </p>
+            <p> p2 </p>
+            <p> p3 </p>
+            <div>
+                <p> p4 </p>
+                <p> p5 </p>
+            </div>
+
+            
+        <h2> p6 </h2>
+                    
+    </body>
+</html>
+
+<!-- this tag will only select the sibling of tag we need. it will not select 
+        the main tag but sibling of that tag. because above p4 and p5 are under div tag 
+        so they are children of div and not sibling of h1. so here it will
+    select all p present under body except of insider tags and only tags
+below main tag
+
+example is from line 4 to 7
+
+-->

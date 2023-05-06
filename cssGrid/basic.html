@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Grid Basic </title>
+        <style>
+            #parent {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                margin: auto;
+                
+                
+                row-gap: 20px;
+                column-gap: 30px;
+            }
+            #parent > div {
+                color: white;
+                padding: 50px;
+                font-size: 30px;
+        
+            }
+
+            #parent > div:first-child {
+                background-color: aquamarine;
+            }
+            #parent > div:nth-child(2) {
+                background-color: rgb(5, 31, 22);
+            }
+            #parent > div:nth-child(3) {
+                background-color: rgb(107, 60, 170);
+            }
+            #parent > div:last-child {
+                background-color: rgb(12, 4, 24);
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div>
+<div id="parent">
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>
+    <div> 4 </div>
+
+        </div>
+
+
+    </body>
+    
+    
+    
+    
+    
+    
+    </html>
+
+
+
+
+<!-- using grid we can create 2d boxes, rows and column both using single grid. But in flex we can only create row or column using single flex.-->
+<!-- column will be on one line which we specify in grid template section
+        grid-template-columns: 100px 100px 100px 100px; -->
+
+<!-- to insert multiple boxes which cannot be wriiten we use repeat tag
+         grid-template-columns: repeat(4,100px);     -->
+
+ <!-- to insert multiple boxes which cannot be wriiten we use repeat tag
+         grid-template-rows: repeat(2,100px);     -->
+
+            <!-- size will be same of each box using above -->
+
+<!-- we can use % to specify size according to screen size grid-template-columns: repeat(2,50px);-->
+
+
+<!-- we can use % to specify size according to screen size grid-template-columns: repeat(2,50%);-->
+
+<!-- we can use fr tag also to specify sizes grid-template-columns: repeat(2,1fr); -->
+
+                <!-- in grid fr is more useful -->
+

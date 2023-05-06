@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> Adjacent Sibling selector</title>
+        <style>
+        h1 + p {
+          color: brown;
+        }
+        h2 + p {
+            color: aliceblue;
+        }
+    </style>
+    </head>
+    <body>
+            <h1> Heading 1 </h1>
+            <p> p1 </p>
+            <h2> Heading 2 </h2>
+            <h2> Heading 3 </h2>
+            <p> p2 </p>
+            <p> p3 </p>
+            <p> p34 </p>
+            <div>
+                <p> p4 </p>
+                <p> p5 </p>
+            </div>
+
+            <p> p6 </p>
+                    
+    </body>
+</html>
+
+<!-- this selector will only style right after tag of main tag
+    like we have asked h1 adjacent so here only p1 will get styling.-->
+
+<!-- if there is different tag adjacent, it will not do any styling.-->

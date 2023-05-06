@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>pseudo elements</title>
+        <style>
+            p::first-letter { /*we can do multiple things here */ 
+                color: red;
+                font-size: 25px;
+                font-weight: bold;
+
+            }
+            p::after{
+                content:"Masai"; /* it will display content at last*/
+            }
+            p::before{
+                content:"School"; /* it will display content at start*/
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <button> Like! </button>
+        <input type="text" placeholder="enter your name"/>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ipsa nihil fugiat magnam aut labore aliquid commodi eligendi libero cumque quam tempora culpa eveniet recusandae excepturi, voluptate laborum velit ea.</p>
+
+        </div>
+    </body>
+</html>
+
+
+<!-- priority of ps element is 1-->
